@@ -24,17 +24,14 @@ difference() {
     // base
     // utils.scad
     roundedcube([b_width, b_length, b_height], false, 4, "zmax");
-    
-    //cube([b_width, b_length, b_height]);
 
     for (row=[0:num_rows-1],column = [0:num_holes/num_rows-1]) {
        hole(row,column);
     }
 }
 
-
-
-font="Hurmit Nerd Font Mono:style=Bold";
+//font="Hurmit Nerd Font Mono:style=Bold";
+font="JetBrains Mono:style=Bold";
 color("red")
 translate([b_width/2,0,b_height/2])
 rotate([90,0,0])
